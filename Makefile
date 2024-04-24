@@ -16,7 +16,7 @@ RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror
 NAME			= libft.a
 
-%.o:%.c
+%.o:%.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@ 
 
 all:			$(NAME)
